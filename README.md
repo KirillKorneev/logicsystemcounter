@@ -1,3 +1,5 @@
+### A more complete explanation of the program can be found in the pdf file of this repository!
+
 # Logik-Interpreter 3.0
 -----------------------------
 Information:
