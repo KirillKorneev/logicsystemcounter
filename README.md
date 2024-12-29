@@ -1,21 +1,21 @@
-# Логический интерпретатор 3.0
+# Logik-Interpreter 3.0
 -----------------------------
-Информация:
+Information:
 -----------------------------
-- Решает логические системы уравнений (пример - https://kpolyakov.spb.ru/school/test10bu/21a.htm).
-- Ввод данных осуществл€ется в файл "data.txt", вывод подходящих комбинаций в "data_out.txt".
-- Вывод ответа (количества подходящих комбинаций) осуществляется на консоль. 
-Бонусом выводит количество переменных.
+- Solves logical systems of equations (example - https://kpolyakov.spb.ru/school/test10bu/21a.htm).
+- The data is entered into a file "data.txt", output of matching combinations in "data_out.txt".
+- The answer (number of matching combinations) is output to the console. 
+Bonus outputs the number of variables.
 -----------------------------
-Синтаксис:
+Syntax:
 -----------------------------
-1) "^" - операция конъюнкции 
-2) "+" - операция дизъюнкции
-3) "-" - операция импликации
-4) "=" - операция эквиваленции
-5) "!" - операция отрицания
+1) "^" - conjunctive operation (AND)
+2) "+" - disjunction operation (OR)
+3) "-" - implication operation (->)
+4) "=" - equivalence operation
+5) "!" - negation operation
 -----------------------------
-Пример входных данных:
+Example of input data:
 -----------------------------
 (x1 - x2) ^ (x2 - x3) ^ (x3 - x4) = 1
 (y1 - y2) ^ (y2 - y3) ^ (y3 - y4) = 1
@@ -30,8 +30,8 @@ x1 ^ y2 ^ z3 = 0
 (x1 - x2) ^ (x3 - x4 - x5 - x6) = 0
 (y1 - y2 - y3) ^ (y4 - y5 - y6) = 1
 (x2 - y2) ^ (x3 - y3) = 1
+
 ----------------------------
-Ограничение:
+Restriction:
 ----------------------------
-Программа решает уравнения с 3 переменными: x, y, z, которых может быть по 13 наборов каждая
-(т.е. x1, x2...x13; y1, y2...y13; z1, z2...z13). Сделано так, потому что при тестах не нашлось системы, где больше трех типов переменных и больше 13 переменных по 1 типу.
+The program solves equations with 3 variables: x, y, z, of which there can be 13 sets each (i.e. x1, x2...x13; y1, y2...y13; z1, z2...z13). It is done so because during the tests there was no system with more than 3 types of variables and more than 13 variables of 1 type each.
